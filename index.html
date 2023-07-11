@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Company Data</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>ISO</th>
+            <th>City</th>
+            <th>NACE</th>
+            <th>Website</th>
+        </tr>
+        {% for comp in compnames1 %}
+        <tr>
+            <td>{{ comp.id }}</td>
+            <td>{{ comp.name }}</td>
+            <td>{{ comp.iso }}</td>
+            <td>{{ comp.city }}</td>
+            <td>{{ comp.nace }}</td>
+            <td>{{ comp.website }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
